@@ -16,21 +16,13 @@
   </header>
   <p>Hi, I am started a blog , please visit</p>
 </section>
-
+<!-- prettier-ignore -->
 <section id="latest-posts">
   <h2>My latest Posts</h2>
   <ul>
-    <li>
-      <article class="post">
-        <a href="">
-          <img src="{% static 'blog/mountains.jpg' %}" alt="Mountain hiking" />
-          <div class="post__content">
-            <h3>Mountain hiking</h3>
-            <p>A very long paragraph</p>
-          </div>
-        </a>
-      </article>
-    </li>
+    {% for post in posts%} 
+       {% include 'blog/includes/post.html' %}
+    {% endfor %}
   </ul>
 </section>
 
