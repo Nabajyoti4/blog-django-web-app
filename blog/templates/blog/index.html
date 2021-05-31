@@ -1,9 +1,46 @@
 <!-- prettier-ignore -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Blog{% endblock title %}
 
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock css_files %} {% block content %}
 
-{% block content %}
-<h1>My Blog started</h1>
+<header id="main-navigation">
+  <h1><a href="">Naba Blog</a></h1>
+  <nav><a href="">All Posts</a></nav>
+</header>
+
+<section id="welcome">
+  <header>
+    <img src="" alt="Naba- Author" />
+    <h2>NABAJYOTI BLOG</h2>
+  </header>
+  <p>Hi, I am started a blog , please visit</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My latest Posts</h2>
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="" alt="Mountain hiking" />
+          <div class="post__content">
+            <h3>Mountain hiking</h3>
+            <p>A very long paragraph</p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What i do</h2>
+  <p>I love life ml</p>
+  <p>I help others</p>
+</section>
 {% endblock content %}
