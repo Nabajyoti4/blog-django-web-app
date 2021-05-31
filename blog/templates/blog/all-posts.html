@@ -2,23 +2,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Blog{% endblock title %}
+{% block title %}All My Posts{% endblock title %}
 
 {% block css_files %}
 <link rel="stylesheet" href="{% static 'blog/post.css' %}" />
-<link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+<link rel="stylesheet" href="{% static 'blog/all-posts.css' %}" />
 {% endblock css_files %} {% block content %}
-
-<section id="welcome">
-  <header>
-    <img src="{% static 'blog/boss.jpeg' %}" alt="Naba- Author" />
-    <h2>NABAJYOTI BLOG</h2>
-  </header>
-  <p>Hi, I am started a blog , please visit</p>
-</section>
-
-<section id="latest-posts">
-  <h2>My latest Posts</h2>
+<section id="all-posts">
+  <h2>My posts</h2>
   <ul>
     <li>
       <article class="post">
@@ -32,11 +23,5 @@
       </article>
     </li>
   </ul>
-</section>
-
-<section id="about">
-  <h2>What i do</h2>
-  <p>I love life ml</p>
-  <p>I help others</p>
 </section>
 {% endblock content %}
