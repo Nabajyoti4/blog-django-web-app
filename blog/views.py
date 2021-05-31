@@ -81,7 +81,12 @@ def index(request):
     })
 
 def posts(request):
-    return render(request, "blog/all-posts.html")
+    return render(request, "blog/all-posts.html", {
+        "posts" : blogs
+    })
 
 def post_detail(request, slug):
-    return render(request, "blog/post-detail.html")
+    post = next(post for post in blogs if post['slug'] == slug)
+    return render(request, "blog/post-detail.html", {
+       "post" : post
+    })
