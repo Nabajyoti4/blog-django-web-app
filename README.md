@@ -15,4 +15,9 @@ Website Functionalities:
 5. From single post page user can mark or remove favorite post , which are stored in session
 
 
-![alt text]()
+Index page
+![alt text](https://github.com/Nabajyoti4/blog-django-web-app/blob/main/index.png)
+
+
+Full post Page
+![alt text](https://github.com/Nabajyoti4/blog-django-web-app/blob/main/post.png)
