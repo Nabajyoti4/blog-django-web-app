@@ -1,7 +1,7 @@
 # blog-django-web-app
 A blog made using Django backend to serve post to user and also display the contents related to the blogger. The whole application is fully hosted on AWS EBS service with S3 storage to store static files
 
-http://djangoblog-env.eba-bpsek333.us-east-1.elasticbeanstalk.com/posts/love-coding
+http://djangoblog-env.eba-bpsek333.us-east-1.elasticbeanstalk.com/
 
 The tech stack used are:
 1. Django framework 
